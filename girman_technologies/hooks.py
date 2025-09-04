@@ -11,10 +11,6 @@ app_license = "mit"
 required_apps = ["hrms"]
 
 fixtures = [
-	{
-		"dt": "User",
-		"filters": [["first_name", "in", ["Interviewer", "HR Manager"]]],
-	},
 	{"dt": "Workflow", "filters": [["name", "in", ["Recruitment Workflow"]]]},
 	{"dt": "Custom Field"},
 	{
