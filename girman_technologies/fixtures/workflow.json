@@ -1,0 +1,115 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Job Applicant",
+  "is_active": 1,
+  "modified": "2025-09-03 23:41:46.916359",
+  "name": "Recruitment Workflow",
+  "override_status": 0,
+  "send_email_alert": 0,
+  "states": [
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Application",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Screening",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Interviewer",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Interview",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Offer",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "HR Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "state": "Hired",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "To be Screened",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Screening",
+    "state": "Application",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Shortlisted",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Interview",
+    "state": "Screening",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Cleared",
+    "allow_self_approval": 1,
+    "allowed": "Interviewer",
+    "condition": null,
+    "next_state": "Offer",
+    "state": "Interview",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "HR Manager",
+    "condition": null,
+    "next_state": "Hired",
+    "state": "Offer",
+    "workflow_builder_id": null
+   }
+  ],
+  "workflow_data": null,
+  "workflow_name": "Recruitment Workflow",
+  "workflow_state_field": "workflow_state"
+ }
+]

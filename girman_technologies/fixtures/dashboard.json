@@ -1,0 +1,20 @@
+[
+ {
+  "cards": [],
+  "chart_options": null,
+  "charts": [
+   {
+    "chart": "Applicants by source",
+    "width": "Half"
+   }
+  ],
+  "dashboard_name": "Applicants by source",
+  "docstatus": 0,
+  "doctype": "Dashboard",
+  "is_default": 0,
+  "is_standard": 1,
+  "modified": "2025-09-04 12:08:01.173036",
+  "module": "HR",
+  "name": "Applicants by source"
+ }
+]

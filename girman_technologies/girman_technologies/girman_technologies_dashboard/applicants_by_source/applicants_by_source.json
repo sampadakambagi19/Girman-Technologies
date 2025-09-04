@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Applicants By Source",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-09-03 23:46:40.182020",
+ "dashboard_name": "Applicants by Source",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-09-03 23:46:40.182020",
+ "modified_by": "Administrator",
+ "module": "Girman Technologies",
+ "name": "Applicants by Source",
+ "owner": "Administrator"
+}

@@ -8,7 +8,29 @@ app_license = "mit"
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = ["hrms"]
+
+fixtures = [
+	{"dt": "Workflow", "filters": [["name", "in", ["Recruitment Workflow"]]]},
+	{"dt": "Custom Field"},
+	{
+		"dt": "Workflow State",
+		"filters": [["name", "in", ["Application", "Screening", "Interview", "Offer", "Hired"]]],
+	},
+	{"dt": "Dashboard", "filters": [["name", "in", ["Applicants by Source"]]]},
+	{"dt": "Dashboard Chart", "filters": [["name", "in", ["Applicants by Source"]]]},
+	{"dt": "Letter Head", "filters": [["name", "in", ["Girman Technologies"]]]},
+	{"dt": "Print Format", "filters": [["name", "in", ["Experience Letter", "Standard Salary Slip 1"]]]},
+	{"dt": "Salary Component", "filters": [["name", "in", ["Special Allowance", "Investments"]]]},
+	{
+		"dt": "Salary Structure",
+		"filters": [["name", "in", ["GirmanTechnologies", "Old Regime", "New Regime"]]],
+	},
+	{
+		"dt": "Report",
+		"filters": [["name", "in", ["Tax Regime comparision"]]],
+	},
+]
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
@@ -140,13 +162,16 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Employee": {
+		"before_save": "girman_technologies.girman_technologies.employee.before_save",
+		"on_update": "girman_technologies.girman_technologies.employee.on_update",
+	},
+	"Salary Slip": {
+		# "on_update": "girman_technologies.girman_technologies.payroll.before_save_salary_slip",
+		"before_save": "girman_technologies.girman_technologies.payroll.before_save_salary_slip",
+	},
+}
 
 # Scheduled Tasks
 # ---------------
@@ -244,4 +269,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-

@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-04 15:46:45.795871",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "section_80c",
+  "section_80d",
+  "other_exemptions",
+  "fiscal_year"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_80c",
+   "fieldtype": "Currency",
+   "label": "Section 80C"
+  },
+  {
+   "fieldname": "section_80d",
+   "fieldtype": "Currency",
+   "label": "Section 80D"
+  },
+  {
+   "fieldname": "fiscal_year",
+   "fieldtype": "Date",
+   "label": "Fiscal Year"
+  },
+  {
+   "fieldname": "other_exemptions",
+   "fieldtype": "Currency",
+   "label": "Other Exemptions"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-04 15:48:32.864873",
+ "modified_by": "Administrator",
+ "module": "Girman Technologies",
+ "name": "Employee Investment Declaration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
