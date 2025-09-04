@@ -2,8 +2,8 @@
  {
   "accounts": [
    {
-    "account": "Cash - Z",
-    "company": "Zyteshores"
+    "account": "Cash - GT",
+    "company": "GirmanTech"
    }
   ],
   "amount": 0.0,
@@ -22,9 +22,46 @@
   "formula": null,
   "is_flexible_benefit": 0,
   "is_income_tax_component": 0,
-  "is_tax_applicable": 1,
+  "is_tax_applicable": 0,
   "max_benefit_amount": 0.0,
-  "modified": "2025-02-14 20:56:26.852690",
+  "modified": "2025-09-04 16:10:06.611089",
+  "name": "Investments",
+  "only_tax_impact": 0,
+  "pay_against_benefit_claim": 0,
+  "remove_if_zero_valued": 1,
+  "round_to_the_nearest_integer": 0,
+  "salary_component": "Investments",
+  "salary_component_abbr": "Investments",
+  "statistical_component": 0,
+  "type": "Deduction",
+  "variable_based_on_taxable_salary": 0
+ },
+ {
+  "accounts": [
+   {
+    "account": "Cash - GT",
+    "company": "GirmanTech"
+   }
+  ],
+  "amount": 0.0,
+  "amount_based_on_formula": 0,
+  "component_type": "",
+  "condition": null,
+  "create_separate_payment_entry_against_benefit_claim": 0,
+  "deduct_full_tax_on_selected_payroll_date": 0,
+  "depends_on_payment_days": 0,
+  "description": null,
+  "disabled": 0,
+  "do_not_include_in_total": 0,
+  "docstatus": 0,
+  "doctype": "Salary Component",
+  "exempted_from_income_tax": 0,
+  "formula": null,
+  "is_flexible_benefit": 0,
+  "is_income_tax_component": 0,
+  "is_tax_applicable": 0,
+  "max_benefit_amount": 0.0,
+  "modified": "2025-09-04 14:18:31.449291",
   "name": "Special Allowance",
   "only_tax_impact": 0,
   "pay_against_benefit_claim": 0,
