@@ -38,3 +38,11 @@ This app can use GitHub Actions for CI. The following workflows are configured:
 ### License
 
 mit
+
+## Features Implemented
+
+- Part 1: Recruitment Workflow, Source field, Applicants by Source chart
+- Part 2: Employee lifecycle automation and Experience Letter PDF
+- Part 3: Salary Structure, Payroll Entry, Custom Payslip
+- Part 4: Old/New Tax regime preference through Employee field + auto-structure
+- Part 5: Investment Declaration Doctype and payroll linkage
