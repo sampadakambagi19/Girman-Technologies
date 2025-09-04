@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:employee",
  "creation": "2025-09-04 15:46:45.795871",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -16,7 +17,8 @@
    "fieldname": "employee",
    "fieldtype": "Link",
    "label": "Employee",
-   "options": "Employee"
+   "options": "Employee",
+   "unique": 1
   },
   {
    "fieldname": "section_80c",
@@ -41,10 +43,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-04 15:48:32.864873",
+ "modified": "2025-09-04 18:55:14.261406",
  "modified_by": "Administrator",
  "module": "Girman Technologies",
  "name": "Employee Investment Declaration",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
