@@ -1,8 +1,7 @@
-# my_hr_custom/payroll_events.py
 import frappe
 
 
-# Check Employess Tax Preference Regime
+# Check employees' tax regime preference
 def before_save_salary_slip(doc, method):
 	employee = frappe.get_doc("Employee", doc.employee)
 	if employee.custom_tax_regime_preference == "Old Regime":
@@ -12,7 +11,7 @@ def before_save_salary_slip(doc, method):
 	else:
 		doc.salary_structure = frappe.db.get_value("Salary Structure", {"name": "GirmanTechnologies"})
 
-	#   Investments
+	#  Investments
 	investment = frappe.db.get_value(
 		"Employee Investment Declaration",
 		{"employee": doc.employee},
